@@ -1,0 +1,41 @@
+# Created at 2019-04-23T11:00:59.807
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+# Created at 2019-04-23T11:01:08.711
+Unexpected IOException with stream: 2019-04-23 11:01:08.711  INFO 15090 --- [           main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@608f310a'
+
+
+# Created at 2019-04-23T11:01:08.719
+Unexpected IOException with stream: 2019-04-23 11:01:08.718  INFO 15090 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+
+
+# Created at 2019-04-23T11:01:11.483
+Unexpected IOException with stream: 2019-04-23 11:01:11.483  INFO 15090 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+
+
+# Created at 2019-04-23T11:01:11.634
+Unexpected IOException with stream: 2019-04-23 11:01:11.633  WARN 15090 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+
+
+# Created at 2019-04-23T11:01:12.390
+Unexpected IOException with stream: 2019-04-23 11:01:12.389  INFO 15090 --- [           main] _.Server.ServerApplicationTests          : Started ServerApplicationTests in 25.213 seconds (JVM running for 27.392)
+
+
+# Created at 2019-04-23T11:01:12.433
+Unexpected IOException: 5,1,_Server_Side.Server.ServerApplicationTests,contextLoads(_Server_Side.Server.ServerApplicationTests),null,null,null
+
+
+# Created at 2019-04-23T11:01:12.672
+Unexpected IOException: 6,1,_Server_Side.Server.ServerApplicationTests,contextLoads(_Server_Side.Server.ServerApplicationTests),null,null,null
+
+
+# Created at 2019-04-23T11:01:12.673
+Unexpected IOException: 2,1,org.apache.maven.surefire.junit4.JUnit4Provider,_Server_Side.Server.ServerApplicationTests,null,null,null
+
+

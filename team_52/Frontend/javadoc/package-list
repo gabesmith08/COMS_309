@@ -1,0 +1,9 @@
+com.example.runningman
+com.example.runningman.activities
+com.example.runningman.activities.auth
+com.example.runningman.activities.feed
+com.example.runningman.activities.groups
+com.example.runningman.activities.profile
+com.example.runningman.fragments
+com.example.runningman.model
+com.example.runningman.websockets

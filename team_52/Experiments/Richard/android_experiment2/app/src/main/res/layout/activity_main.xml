@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"/>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_main"
+        android:layout_width="match_parent"
+        android:layout_height="637dp" />
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="244dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="30dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/edit_message"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="left|top"
+        tools:paddingTop="20dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginRight="20dp"
+        android:onClick="sendMessage"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="right|top"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+
+</android.support.design.widget.CoordinatorLayout>

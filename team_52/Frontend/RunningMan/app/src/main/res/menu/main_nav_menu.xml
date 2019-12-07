@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/feed"
+        android:icon="@drawable/nav_feed"
+        android:title="Feed"/>
+
+    <item
+        android:id="@+id/allGroups"
+        android:icon="@drawable/nav_groups"
+        android:title="Groups"/>
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/nav_profile"
+        android:title="Profile"/>
+
+</menu>

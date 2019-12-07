@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: _Server_Side.Server.ServerApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.367 s - in _Server_Side.Server.ServerApplicationTests

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.runningman">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activities.groups.WebsocketTestActivity"></activity>
+        <activity android:name=".activities.groups.CreateGroupConfirmationActivity" />
+        <activity android:name=".activities.groups.LeaveGroupConfirmationActivity" />
+        <activity android:name=".activities.groups.JoinGroupConfirmationActivity" />
+        <activity android:name=".activities.groups.GroupsActivity" />
+        <activity android:name=".activities.groups.CreateGroupActivity" />
+        <activity android:name=".activities.profile.EditProfileActivity" />
+        <activity android:name=".activities.profile.ProfileActivity" />
+        <activity android:name=".activities.AdminHomeActivity" />
+        <activity android:name=".activities.AdminLoginActivity" />
+        <activity android:name=".activities.feed.ActivityFormSubmittedActivity" />
+        <activity android:name=".activities.auth.SignUpActivity" />
+        <activity android:name=".activities.auth.LoginActivity" />
+        <activity android:name=".activities.feed.ActivityFormActivity" />
+        <activity android:name=".activities.feed.FeedActivity" />
+        <activity android:name=".activities.auth.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

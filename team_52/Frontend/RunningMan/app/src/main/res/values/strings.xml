@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">RunningMan</string>
+    <string name="appName">Running Man</string>
+    <string name="welcomeMessage">Welcome Back</string>
+    <string name="enterPasswordHint">Please enter your password:</string>
+    <string name="loginButtonText">Login</string>
+    <string name="distanceHint">Enter in Decimal...</string>
+    <string name="timeHint">Enter in Hours : Minutes...</string>
+    <string name="locationHint">Enter Location...</string>
+
+    <string name="title">(Android WebSockets Chat App)</string>
+    <string name="author_name">Group PP_2</string>
+    <string name="author_url">www.iastate.edu</string>
+    <string name="enter_name">Enter your name</string>
+    <string name="btn_join">JOIN</string>
+    <string name="btn_send">Send</string>
+
+
+    <string-array name="apiMethods">
+        <item>GET</item>
+        <item>POST</item>
+        <item>DELETE</item>
+        <item>PUT</item>
+    </string-array>
+
+
+    <string-array name="activityFormDropdownMenu">
+        <item>Run</item>
+        <item>Jog</item>
+        <item>Swim</item>
+        <item>Crawl</item>
+        <item>Bike</item>
+        <item>RollerBlade</item>
+        <item>SkateBoard</item>
+    </string-array>
+</resources>

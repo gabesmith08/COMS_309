@@ -1,0 +1,40 @@
+##dummy
+stages:
+  - mavenbuild
+  - autodeploy
+  - androidbuild
+  
+maven-build:
+  stage: mavenbuild
+  tags:
+    - Spring_testing_sudo
+  script:
+    - cd  Backend/Code/Server
+    - mvn package -B
+    
+
+autoDeploy:
+  stage: autodeploy
+  tags:
+    - Spring_deploy
+  script:
+    - cd  Backend/Code/Server
+    - mvn package
+    - sudo mv target/Server-0.0.1-SNAPSHOT.jar /target/web-demo.jar
+    - sudo systemctl stop systemd-web-demo.service
+    - sudo systemctl start systemd-web-demo.service
+    
+android-build:
+  image: javiersantos/android-ci:latest
+  stage: androidbuild
+  before_script:
+    - export GRADLE_USER_HOME=`pwd`/.gradle
+    - chmod +x ./Frontend/RunningMan/gradlew
+  tags:
+   - android_tag_2
+  script:
+    - cd Frontend/RunningMan
+    - ./gradlew assemble
+  artifacts:
+    paths:
+    - Frontend/RunningMan/app/build/outputs/

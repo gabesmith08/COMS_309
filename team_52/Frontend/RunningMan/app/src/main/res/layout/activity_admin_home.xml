@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AdminHomeActivity">
+
+    <TextView
+        android:id="@+id/adminHomeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Admin Home"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/apiCallTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:text="API Calls"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminHomeTitle" />
+
+    <EditText
+        android:id="@+id/requestText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textUri"
+        app:layout_constraintStart_toStartOf="@+id/apiCallTitle"
+        app:layout_constraintTop_toBottomOf="@+id/apiCallTitle"
+        tools:text="Enter Get Request: " />
+
+    <Spinner
+        android:id="@+id/apiMethodSpinner"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/requestText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/requestText"
+        app:layout_constraintTop_toBottomOf="@+id/apiCallTitle" />
+
+    <Button
+        android:id="@+id/sendRequestButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Send"
+        app:layout_constraintEnd_toEndOf="@+id/apiMethodSpinner"
+        app:layout_constraintStart_toStartOf="@+id/requestText"
+        app:layout_constraintTop_toBottomOf="@+id/requestText" />
+
+    <TextView
+        android:id="@+id/dataFieldTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Data: "
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/sendRequestButton"
+        app:layout_constraintTop_toBottomOf="@+id/sendRequestButton" />
+
+    <EditText
+        android:id="@+id/paramData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/sendRequestButton"
+        app:layout_constraintStart_toStartOf="@+id/dataFieldTitleText"
+        app:layout_constraintTop_toBottomOf="@+id/dataFieldTitleText" />
+
+    <TextView
+        android:id="@+id/responseFieldTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Response:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/paramData"
+        app:layout_constraintTop_toBottomOf="@+id/paramData" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="349dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/sendRequestButton"
+        app:layout_constraintStart_toStartOf="@+id/paramData"
+        app:layout_constraintTop_toBottomOf="@+id/responseFieldTitleText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/responseText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="196dp"
+                tools:layout_editor_absoluteY="355dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

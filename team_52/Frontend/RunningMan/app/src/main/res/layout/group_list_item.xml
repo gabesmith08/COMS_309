@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    >
+
+    <ImageView
+        android:id="@+id/groupImage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nav_groups" />
+
+    <TextView
+        android:id="@+id/groupName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Group Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/groupImage2"
+        app:layout_constraintTop_toTopOf="@+id/groupImage2" />
+
+    <TextView
+        android:id="@+id/membersLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Members: "
+        app:layout_constraintStart_toEndOf="@+id/groupImage2"
+        app:layout_constraintTop_toBottomOf="@+id/groupName" />
+
+    <TextView
+        android:id="@+id/locationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Location: "
+        app:layout_constraintStart_toEndOf="@+id/groupImage2"
+        app:layout_constraintTop_toBottomOf="@+id/membersLabel" />
+
+    <TextView
+        android:id="@+id/membersItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="10"
+        app:layout_constraintStart_toEndOf="@+id/membersLabel"
+        app:layout_constraintTop_toTopOf="@+id/membersLabel" />
+
+    <TextView
+        android:id="@+id/locationItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="60103"
+        app:layout_constraintStart_toEndOf="@+id/locationLabel"
+        app:layout_constraintTop_toTopOf="@+id/locationLabel" />
+</android.support.constraint.ConstraintLayout>

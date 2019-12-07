@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Mon Feb 11 14:44:14 CST 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0168-de4d-9a1c-000006640000 
+on database directory memory:/Users/samuelshifflett/Documents/309_gitlab/team_52/Experiments/Sam/tests/testdb with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@799f7e29 
+Loaded from file:/Users/samuelshifflett/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=11.0.2+7-LTS
+user.dir=/Users/samuelshifflett/Documents/309_gitlab/team_52/Experiments/Sam/tests
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.13.6
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
